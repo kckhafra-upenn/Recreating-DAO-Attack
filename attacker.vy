@@ -17,7 +17,7 @@ def _attack() -> bool:
     
     # TODO: Use the DAO interface to withdraw funds.
     # Make sure you add a "base case" to end the recursion
-
+    DAO(self.dao_address).withdraw()
     return True
 
 @external
@@ -31,7 +31,7 @@ def attack(dao_address:address):
         deposit_amount = dao_address.balance
     
     # TODO: make the deposit into the DAO 
-    DAO.withdraw(dao_address)
+    
     
     # TODO: Start the reentrancy attack
 

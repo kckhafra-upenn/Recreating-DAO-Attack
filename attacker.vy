@@ -30,7 +30,8 @@ def attack(dao_address:address):
     if dao_address.balance < msg.value:
         deposit_amount = dao_address.balance
     
-    # TODO: make the deposit into the DAO   
+    # TODO: make the deposit into the DAO 
+      self.dao_address.transer(self.dao_address,deposit_amount)
     
     # TODO: Start the reentrancy attack
 
